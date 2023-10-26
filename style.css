@@ -36,6 +36,26 @@ html::-webkit-scrollbar-thumb {
   background: var(--primary-color);
 }
 
+section {
+  padding: 2rem 7%;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  border: 0.1rem solid var(--primary-color);
+  background: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  background-color: #fff6eb;
+  color: var(--primary-color);
+}
 /* header */
 
 .header {
@@ -49,3 +69,59 @@ html::-webkit-scrollbar-thumb {
   align-items: center;
   z-index: 1000;
 }
+
+.header .logo {
+  margin-right: auto;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.header .logo {
+  color: #fff;
+}
+
+.header .navbar {
+  position: relative;
+}
+
+.header .navbar #close-navbar {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  color: #444;
+  display: none;
+}
+
+.header .navbar a {
+  margin-right: 2rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.header .navbar a:hover {
+  color: var(--primary-color);
+}
+
+.header .icons div {
+  margin-left: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.header .icons div:hover {
+  color: var(--primary-color);
+}
+
+.header #menu-btn {
+  display: none;
+}
+
+/* END */
+
+/* HOME */
