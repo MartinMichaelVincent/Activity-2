@@ -167,22 +167,25 @@ section {
 
 .about .row {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
 .about .row .image {
-  flex: 1 1 55rem;
+  flex: 1 1 calc(50% - 10px);
+  max-width: calc(50% - 10px);
+  margin-right: 20px;
 }
 
 .about .row .image img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 .about .row .content {
-  flex: 1 1 45rem;
-  padding: 8rem;
+  flex: 1 1 calc(50% - 10px);
+  max-width: calc(50% - 10px);
 }
 
 .about .row .content h3 {
