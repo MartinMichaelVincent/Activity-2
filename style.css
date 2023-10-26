@@ -186,6 +186,8 @@ section {
 .about .row .content {
   flex: 1 1 calc(50% - 10px);
   max-width: calc(50% - 10px);
+  display: flex; /* Add this property to create a flex container */
+  flex-direction: column; /* Stack the elements vertically */
 }
 
 .about .row .content h3 {
@@ -200,10 +202,48 @@ section {
   line-height: 1.8;
 }
 
+.about .row .content .image-container {
+  flex: 1; /* Take up remaining vertical space */
+  display: flex; /* Center the image vertically */
+  align-items: center; /* Center the image vertically */
+}
+
 .line {
   margin-top: 35px;
   margin-bottom: 35px;
   width: 100px;
   height: 3px;
   background: var(--primary-color);
+}
+
+.menu .box-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Display 3 columns per row */
+  gap: 1.5rem;
+}
+
+.menu .box {
+  padding: 1rem; /* Adjust padding as needed */
+  text-align: center;
+  background-color: var(--main-color);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.menu .box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.menu .box .price {
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+}
+
+.menu .box:hover {
+  background-color: var(--primary-color);
+}
+
+.menu .box:hover > * {
+  color: var(--black);
 }
