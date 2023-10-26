@@ -19,7 +19,7 @@
 }
 
 html {
-  font-size: 62.5;
+  font-size: 62.5%;
   overflow: hidden;
   scroll-behavior: smooth;
 }
@@ -85,7 +85,7 @@ section {
   font-weight: bolder;
 }
 
-.header .logo {
+.header .logo i {
   color: white;
 }
 
@@ -132,7 +132,7 @@ section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url(../Assets/background.jpg);
+  background: url('Assets/background.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -151,14 +151,14 @@ section {
 .about {
   padding-top: 50px;
   padding-bottom: 50px;
-  background-image: url(../Asset/about-bg.png);
+  background-image: url('Assets/about-bg.png');
   background-repeat: repeat-y;
   background-position: center top;
 }
 
 .about .row {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -198,7 +198,7 @@ section {
 
 .menu .box-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
 }
 
