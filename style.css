@@ -40,6 +40,14 @@ section {
   padding: 2rem 7%;
 }
 
+.heading {
+  text-align: center;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-size: 4rem;
+  margin-top: 5rem;
+}
+
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -125,3 +133,32 @@ section {
 /* END */
 
 /* HOME */
+
+.Home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(../assets/background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.Home .content {
+  max-width: 60rem;
+}
+
+.Home .content h3 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+/*END*/
+
+/* ABOUT */
+
+.about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: ;
+}
